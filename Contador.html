@@ -1,0 +1,26 @@
+<script>
+function criarContador() {
+  let contagem = 0; 
+
+  return {
+    incrementar: function () {
+      contagem++;
+    },
+    decrementar: function () {
+      contagem--;
+    },
+    valor: function () {
+      return contagem;
+    }
+  };
+}
+
+
+const contador = criarContador();
+contador.incrementar();
+contador.incrementar();
+console.log(contador.valor());
+
+contador.decrementar();
+console.log(contador.valor());
+</script>

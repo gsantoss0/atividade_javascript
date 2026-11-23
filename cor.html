@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cor aleatoria</title>
+</head>
+<body>
+  <button id = "btnMudarCor">mudar cor</button>
+
+  <script>
+    const botao = document.getElementById("btnMudarCor");
+
+    botao.addEventListener("click", () => {
+      const corRandom = "#" + Math.floor(Math.random() * 16777215).toString(16)
+      document.body.style.backgroundColor = corRandom;
+    });
+  </script>
+</body>
+</html>
